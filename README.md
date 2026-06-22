@@ -18,9 +18,12 @@ The builder function `(context, index) { ... }` is called for each visible item.
 
 ## Screenshots
 
-![Feed Page 1](screenshots/feed.png)
-![Feed Page 2] (screenshots/feed2.jpeg)
-![Announcement Page 1](screenshots/announcement.png)
+![Feed Page 1](screenshots/feed.jpeg)
+
+![Feed Page 2](screenshots/feed2.jpeg)
+
+![Announcement Page 1](screenshots/announcement.jpeg)
+
 ![Announcement Page 2](screenshots/announcement1.jpeg)
 
 ## How to Run the Demo
