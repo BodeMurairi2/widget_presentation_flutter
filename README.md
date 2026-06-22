@@ -1,17 +1,30 @@
-# widget_presentation_flutter
+## widget_presentation_flutter
 
-A new Flutter project.
+## Demonstration:
 
-## Getting Started
+This repository demonstrates how to use Slivers and more specifically SliverList.
+A sliver is a small portion of a scrollable area. A SliverList is a high performance layout widget that belongs to the Slivers widget family. It is highly customized and helps to render a list of objects.
 
-This project is a starting point for a Flutter application.
+# Attributes
 
-A few resources to get you started if this is your first Flutter project:
+### 1. `delegate` (SliverChildBuilderDelegate)
+The `delegate` property controls how list children are built. Using `SliverChildBuilderDelegate` creates items lazily — only the visible ones are built in memory, which improves performance for long lists. An alternative is `SliverChildListDelegate`, which builds all items upfront.
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+### 2. `childCount`
+A property of `SliverChildBuilderDelegate` that limits how many items the list renders. Without it, the builder keeps creating items indefinitely. Setting `childCount: 20` tells Flutter to stop after 20 items.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### 3. `itemBuilder` / builder callback
+The builder function `(context, index) { ... }` is called for each visible item. It receives the current `index` and returns a widget. This is what makes `SliverList` dynamic — each item can be built from data (e.g., `feedAnnouncements[index]`) rather than being hardcoded.
+
+## How to Run the Demo
+
+Prerequisities:
+- Have flutter and dart SDK installed
+- Have an emulator, Chrome similator extension or the phone
+
+- clone the repository
+- ``git clone https://github.com/BodeMurairi2/widget_presentation_flutter.git``
+-  ``cd widget_presentation_flutter/``
+- ``flutter run``
+
+Author: Bode MURAIRI
