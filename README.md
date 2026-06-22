@@ -16,6 +16,13 @@ A property of `SliverChildBuilderDelegate` that limits how many items the list r
 ### 3. `itemBuilder` / builder callback
 The builder function `(context, index) { ... }` is called for each visible item. It receives the current `index` and returns a widget. This is what makes `SliverList` dynamic — each item can be built from data (e.g., `feedAnnouncements[index]`) rather than being hardcoded.
 
+## Screenshots
+
+![Feed Page 1](screenshots/feed.png)
+![Feed Page 2] (screenshots/feed2.jpeg)
+![Announcement Page 1](screenshots/announcement.png)
+![Announcement Page 2](screenshots/announcement1.jpeg)
+
 ## How to Run the Demo
 
 Prerequisities:
